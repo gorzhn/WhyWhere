@@ -1,0 +1,36 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Locations Page</title>
+    <link rel="stylesheet" href="~/style.css">
+   
+</head>
+
+<body>
+    <div class="wrap">
+
+        @foreach (var i in Model)
+        {
+
+        <div class="container">
+            <div class="review">
+                <img src="@i.ImgUrl" />
+
+                <span>
+                    @i.Description
+                </span>
+            </div>
+
+        </div>
+        
+
+        }
+
+    </div>
+
+</body>
+</html>

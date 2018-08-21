@@ -1,0 +1,57 @@
+﻿@model WhyWhere.Models.CountryModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Why where?</title>
+    <link rel="stylesheet" type="text/css" href="~/style.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+
+    <ul class="slideshow">
+
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>истражувај </h3>
+            </div>
+        </li>
+
+        <li>
+            <span>Image 02</span>
+            <div>
+                <h3>живеј </h3>
+            </div>
+        </li>
+
+
+        <li>
+            <span>Image 03</span>
+            <div>
+                <h3>освојувај</h3>
+            </div>
+        </li>
+
+    </ul>
+
+
+    @using (Html.BeginForm("Selection", "Home", FormMethod.Post))
+    {
+        @Html.DropDownListFor(Model => Model.selectedCountry, new SelectList(Model.countries), new { onchange = "this.form.submit();", @class = "selectbox form-control" })
+
+    }
+
+
+
+
+</body>
+</html>

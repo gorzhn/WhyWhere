@@ -1,0 +1,5 @@
+Log In / Log out
+Create City
+Create Country
+Create Location
+Authorize/Authenticate
