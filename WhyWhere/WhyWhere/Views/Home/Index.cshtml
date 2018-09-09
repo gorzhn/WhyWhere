@@ -43,14 +43,48 @@
 
     </ul>
 
+    <div style="width:100%; text-align:center">
+        @using (Html.BeginForm("Selection", "Home", FormMethod.Post))
+        {
 
-    @using (Html.BeginForm("Selection", "Home", FormMethod.Post))
-    {
-        @Html.DropDownListFor(Model => Model.selectedCountry, new SelectList(Model.countries), new { onchange = "this.form.submit();", @class = "selectbox form-control" })
+            @Html.DropDownListFor(Model => Model.selectedCountry, new SelectList(Model.countries), new { @onchange = "ShowButton()", @class = "selectbox form-control" })
 
-    }
+            <input style="display:none" type="submit" id="confirmBtn" value="Please Confirm">
+
+        }
 
 
+    </div>
+    <script>
+        function ShowButton() {
+            document.getElementById("confirmBtn").style.display = "inline-block";
+
+        }
+
+    </script>
+    <style>
+
+
+        #confirmBtn {
+            color: #D80286;
+            border: 2px solid rgb(216, 2, 134);
+            border-radius: 0px;
+            padding: 18px 36px;
+            display: inline-block;
+            font-family: "Lucida Console", Monaco, monospace;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: ease-out 0.4s;
+            position: relative;
+            background-color: #FFF;
+        }
+
+            #confirmBtn:hover {
+                box-shadow: inset 0 0 0 50px #D80286;
+                color: #FFF;
+            }
+    </style>
 
 
 </body>

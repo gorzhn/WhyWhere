@@ -36,5 +36,7 @@ namespace WhyWhere.Models
         public System.Data.Entity.DbSet<WhyWhere.Models.Cities> Cities { get; set; }
 
         public System.Data.Entity.DbSet<WhyWhere.Models.Locations> Locations { get; set; }
+
+        public System.Data.Entity.DbSet<WhyWhere.Models.UserReview> UserReviews { get; set; }
     }
 }
