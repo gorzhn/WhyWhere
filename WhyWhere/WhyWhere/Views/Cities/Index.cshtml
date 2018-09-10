@@ -6,10 +6,22 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<nav>
+    <ul class="navbar">
+        <li style="display:inline-block">
+            Home |
+        </li>
+        <li style="display:inline-block">
+            Social Media |
+        </li>
+        <li style="display:inline-block">
+            Log In
+        </li>
+
+    </ul>
+
+</nav>
+<table class="table city-grid" >
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.ImgUrl)

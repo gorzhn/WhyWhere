@@ -46,6 +46,7 @@
 
     .slideshow > li:nth-child(1) span {
         background-image: url(Images/image1.jpeg);
+        
     }
 
     .slideshow > li:nth-child(2) span {
@@ -172,6 +173,9 @@ text-transform: uppercase;
 font-weight: bold;
 text-decoration: none;
 }
+body {
+background-color:darkgray;
+}
 
 .wrap {
     text-align: center;
@@ -194,14 +198,62 @@ margin-bottom: 0px;
 .review span {
 background-color: lightblue;
 display: inline-block;
-
-
 min-height: 10vh;
 max-height: 80vh;
-
-
 width: 30vw;
 font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 color: #fff;
 font-weight: bold;
+}
+
+.navbar > ul > li:nth-child(n+2):hover {
+    background-color:lightgrey;
+    transition: ease-in 0.3s;
+    cursor:pointer;
+}
+
+.navbar > ul li {
+    display: inline-block;
+    padding: 20px 10px;
+    width: 150px;
+    float: left;
+    margin-top: -34px;
+    
+}
+    .navbar > ul li:first-child:hover {
+    cursor:pointer;
+    }
+.navbar > ul li:first-child {
+    display: inline-block;
+    padding: 20px 10px;
+    width: 150px;
+    float: left;
+    margin-top: -34px;
+    
+}
+
+.navbar > ul li {
+    display: inline-block;
+    padding: 20px 10px;
+    width: 150px;
+    float: left;
+    margin-top: -34px;
+    color: black;
+}
+.navbar {
+     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+     font-weight:bold;
+     color:white;
+    background-color:white;
+    float:left; 
+    width:100%; 
+    list-style-type:none;
+    height:50px;
+}   
+.navbar > ul {
+    padding:10px;
+}
+
+.logo {
+    background-image: url("https://image.ibb.co/gF1SAU/logo.png");
 }

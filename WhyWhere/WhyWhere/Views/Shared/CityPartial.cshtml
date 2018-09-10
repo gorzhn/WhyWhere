@@ -1,53 +1,75 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Cities</title>
-    <link rel="stylesheet" href="~/style.css">
-    <script src="scripts.js"></script>
-</head>
+﻿    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cities</title>
+        <link rel="stylesheet" href="~/style.css">
+        <script src="scripts.js"></script>
+    </head>
 
-<body>
+    <body>
+        
+        <div id="wrap">
 
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
+            <nav class="navbar">
+                <ul>
+                <li>
+                    <img  src="https://image.ibb.co/i04Tjp/logofinal.png" />
+                </li>    
+                    <li class="navlist">
+                        Почетна
+                    </li>
+                    <li class="navlist">
+                        Медиуми
+                    </li>
+                    <li class="navlist">
+                        Најава
+                    </li>
 
-    <div id="wrap">
-
-        <ul class="grid">
-            @foreach (var i in Model)
-            {
-
-
-
-                // ako ne saka vaka, probaj mesto da vodi do INDEX, Da ima za sekoj grad poseben actionlink so @i.Name
-
-                <li style=" background-image:url(@i.ImgUrl)">
-                    <div>
-
-                        <a href="@Url.Action("Index","Locations",new { title=i.Name})">
-                            @i.Name
-                        </a>
+                </ul>
 
 
-
+            </nav>
 
 
 
 
 
-                    </div>
-                </li>
-
-            }
-
-        </ul>
 
 
+            <ul class="grid">
+                @foreach (var i in Model)
+                {
 
-    </div>
 
-</body>
 
-</html>
+                    // ako ne saka vaka, probaj mesto da vodi do INDEX, Da ima za sekoj grad poseben actionlink so @i.Name
+
+                    <li style=" background-image:url(@i.ImgUrl)">
+                        <div>
+
+                            <a href="@Url.Action("Index","Locations",new { title=i.Name})">
+                                @i.Name
+                            </a>
+
+
+
+
+
+
+
+
+                        </div>
+                    </li>
+
+                }
+
+            </ul>
+
+
+
+        </div>
+
+    </body>
+
+    </html>
