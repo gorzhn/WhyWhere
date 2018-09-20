@@ -226,6 +226,14 @@
     <Compile Include="Migrations\201809091431316_testMigration.Designer.cs">
       <DependentUpon>201809091431316_testMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809201323097_newest.cs" />
+    <Compile Include="Migrations\201809201323097_newest.Designer.cs">
+      <DependentUpon>201809201323097_newest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809201324253_newest1.cs" />
+    <Compile Include="Migrations\201809201324253_newest1.Designer.cs">
+      <DependentUpon>201809201324253_newest1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cities.cs" />
@@ -343,10 +351,10 @@
     <Content Include="Views\Home\Selection.cshtml" />
     <Content Include="Views\Locations\Index.cshtml" />
     <Content Include="Views\Shared\LocationsPartial.cshtml" />
+    <Content Include="Views\UserReviews\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\UserReviews\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -368,6 +376,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809091431316_testMigration.resx">
       <DependentUpon>201809091431316_testMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809201323097_newest.resx">
+      <DependentUpon>201809201323097_newest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809201324253_newest1.resx">
+      <DependentUpon>201809201324253_newest1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

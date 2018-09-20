@@ -11,7 +11,10 @@ namespace WhyWhere.Models
 
         public string reviewDescription { get; set; }
 
-        public int postId { get; set; }
+        
+
+
+        public string Name { get; set; }
 
 
 

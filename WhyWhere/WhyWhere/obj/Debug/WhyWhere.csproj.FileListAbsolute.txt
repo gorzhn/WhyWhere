@@ -381,3 +381,5 @@ C:\Users\Gorjan\Desktop\WhyWhere\WhyWhereFromGit\WhyWhere\WhyWhere\obj\Debug\Why
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhereFromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csproj.CopyComplete
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhereFromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.dll
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhereFromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.pdb
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhereFromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.newest.resources
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhereFromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.newest1.resources

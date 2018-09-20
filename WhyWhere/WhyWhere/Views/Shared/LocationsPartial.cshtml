@@ -11,25 +11,52 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div id="wrap">
 
-        @foreach (var i in Model)
-        {
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img id="logo" src="https://image.ibb.co/i04Tjp/logofinal.png" />
+                </li>
+                <li class="navlist">
+                    Почетна
+                </li>
+                <li class="navlist">
+                    Медиуми
+                </li>
+                <li class="navlist">
+                    Најава
+                </li>
 
-        <div class="container">
-            <div class="review">
-              <img src="@i.ImgUrl"/>
+            </ul>
 
-                <span>
-                    @i.Description
-                </span>
-            </div>
 
-        </div>
-        
+        </nav>
 
-        }
 
+
+        <ul id="locationsId" style="list-style-type:none">
+            @foreach (var i in Model)
+            {
+            <li style="clear:left">
+                <a href="@Url.Action("Index","UserReviews",new { title = i.Name})">
+                    <div class="container">
+                        <div class="review">
+
+                            <img src="@i.ImgUrl" />
+
+                            <span>
+                                @i.Description
+                            </span>
+
+                        </div>
+
+                    </div>
+                </a>
+            </li>
+
+            }
+        </ul>
     </div>
 
 </body>

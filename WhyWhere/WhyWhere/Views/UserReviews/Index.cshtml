@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WhyWhere.Models.UserReview>
+
+@{
+                /**/
+
+                Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Reviews</title>
+    <link rel="stylesheet" href="~/style.css">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="wrap">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img id="logo" src="https://image.ibb.co/i04Tjp/logofinal.png" />
+                </li>
+                <li class="navlist">
+                    Почетна
+                </li>
+                <li class="navlist">
+                    Медиуми
+                </li>
+                <li class="navlist">
+                    Најава
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+        <ul id="reviewsList" style="list-style-type:none">
+            @foreach (var i in Model)
+            {
+                <li>@i.reviewDescription</li>
+                <li>@i.reviewDescription</li>
+
+            }
+        </ul>
+    </div>
+       
+</body>
+</html>

@@ -19,7 +19,12 @@ namespace WhyWhere.Controllers
         {
             return View(db.UserReviews.ToList());
         }
+        [HttpPost]
+        public ActionResult Index(string location)
+        {
 
+            return View(db.UserReviews.Where(x => x.Name == location).ToList());
+        }
         // GET: UserReviews/Details/5
         public ActionResult Details(int? id)
         {
