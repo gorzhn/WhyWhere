@@ -18,15 +18,13 @@
                 <li>
                     <img id="logo" src="https://image.ibb.co/i04Tjp/logofinal.png" />
                 </li>
-                <li class="navlist">
-                    Почетна
-                </li>
+                <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Почетна", "Index", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+
                 <li class="navlist">
                     Медиуми
                 </li>
-                <li class="navlist">
-                    Најава
-                </li>
+                <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Најава", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+
 
             </ul>
 

@@ -24,7 +24,10 @@
         z-index: 0;
         animation: imageAnimation 18s linear infinite 0s;
     }
-
+#loginLink, #loginLink:visited {
+color:black;
+text-decoration:none;
+}
     .slideshow > li > div {
         z-index: 1000;
         position: absolute;
