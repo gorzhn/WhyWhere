@@ -1,15 +1,17 @@
 ﻿@model IEnumerable<WhyWhere.Models.UserReview>
 
 @{
-                /**/
+    /**/
 
-                Layout = null;
+    Layout = null;
+    <h1>@ViewBag.title</h1>
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
+
     <title>Reviews</title>
     <link rel="stylesheet" href="~/style.css">
     <meta name="viewport" content="width=device-width" />
@@ -41,11 +43,11 @@
             @foreach (var i in Model)
             {
                 <li>@i.reviewDescription</li>
-                <li>@i.reviewDescription</li>
+
 
             }
         </ul>
     </div>
-       
+
 </body>
 </html>

@@ -15,15 +15,14 @@ namespace WhyWhere.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: UserReviews
-        public ActionResult Index()
-        {
-            return View(db.UserReviews.ToList());
-        }
-        [HttpPost]
-        public ActionResult Index(string location)
+      
+        public ActionResult Index(string title)
         {
 
-            return View(db.UserReviews.Where(x => x.Name == location).ToList());
+            ViewBag.title = title;
+            List<UserReview> models = db.UserReviews.Where(m => m.Name == title).ToList();
+
+            return View(models);
         }
         // GET: UserReviews/Details/5
         public ActionResult Details(int? id)

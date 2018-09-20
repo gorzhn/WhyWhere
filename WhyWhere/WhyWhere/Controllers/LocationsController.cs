@@ -17,6 +17,7 @@ namespace WhyWhere.Controllers
         // GET: Locations
         public ActionResult Index(string title)
         {
+            
             List<Locations> models = db.Locations.Where(m => m.City == title).ToList();
             return View(models);
         }

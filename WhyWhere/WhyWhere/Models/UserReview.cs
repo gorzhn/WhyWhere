@@ -10,10 +10,7 @@ namespace WhyWhere.Models
         public int ID { get; set; }
 
         public string reviewDescription { get; set; }
-
         
-
-
         public string Name { get; set; }
 
 

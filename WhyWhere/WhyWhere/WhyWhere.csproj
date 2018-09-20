@@ -234,6 +234,10 @@
     <Compile Include="Migrations\201809201324253_newest1.Designer.cs">
       <DependentUpon>201809201324253_newest1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809201518276_asdf.cs" />
+    <Compile Include="Migrations\201809201518276_asdf.Designer.cs">
+      <DependentUpon>201809201518276_asdf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cities.cs" />
@@ -382,6 +386,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809201324253_newest1.resx">
       <DependentUpon>201809201324253_newest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809201518276_asdf.resx">
+      <DependentUpon>201809201518276_asdf.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -39,7 +39,8 @@
             @foreach (var i in Model)
             {
             <li style="clear:left">
-                <a href="@Url.Action("Index","UserReviews",new { title = i.Name})">
+                <a href="@Url.Action("Index","UserReviews",new { title=i.Name})">
+                    <p>@i.Name</p>
                     <div class="container">
                         <div class="review">
 
