@@ -238,6 +238,10 @@
     <Compile Include="Migrations\201809201518276_asdf.Designer.cs">
       <DependentUpon>201809201518276_asdf.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809221230345_user reviews.cs" />
+    <Compile Include="Migrations\201809221230345_user reviews.Designer.cs">
+      <DependentUpon>201809221230345_user reviews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cities.cs" />
@@ -356,6 +360,7 @@
     <Content Include="Views\Locations\Index.cshtml" />
     <Content Include="Views\Shared\LocationsPartial.cshtml" />
     <Content Include="Views\UserReviews\Index.cshtml" />
+    <Content Include="Views\UserReviews\AddReview.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -389,6 +394,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809201518276_asdf.resx">
       <DependentUpon>201809201518276_asdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809221230345_user reviews.resx">
+      <DependentUpon>201809221230345_user reviews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

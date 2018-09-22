@@ -15,15 +15,33 @@ namespace WhyWhere.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: UserReviews
-      
+
         public ActionResult Index(string title)
         {
 
-            ViewBag.title = title;
-            List<UserReview> models = db.UserReviews.Where(m => m.Name == title).ToList();
 
-            return View(models);
+            List<UserReview> models = db.UserReviews.Where(m => m.Name == title).ToList();
+            List<UserReview> models2 = db.UserReviews.Where(m => m.Name == title).OrderByDescending(m => m.ID).ToList();
+
+            return View(models2);
         }
+
+
+        public ActionResult AddReview() {
+        
+
+            return View();
+
+        }
+        [HttpPost]
+        public ActionResult AddReview(UserReview model) {
+            db.UserReviews.Add(model);
+            db.SaveChanges();
+            return RedirectToAction("Index",new { title = model.Name });
+
+        }
+
+
         // GET: UserReviews/Details/5
         public ActionResult Details(int? id)
         {
@@ -39,10 +57,6 @@ namespace WhyWhere.Controllers
             return View(userReview);
         }
 
-        public ActionResult AddReview(UserReview model) {
-            db.UserReviews.Add(model);
-            return RedirectToAction("Index", model.Name);
-        }
 
         // GET: UserReviews/Create
         public ActionResult Create()

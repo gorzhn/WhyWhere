@@ -1,4 +1,4 @@
-﻿
+﻿@using Microsoft.AspNet.Identity
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,7 @@
 
     <title>Locations Page</title>
     <link rel="stylesheet" href="~/style.css">
-   
+
 </head>
 
 <body>
@@ -23,41 +23,87 @@
                 <li class="navlist">
                     Медиуми
                 </li>
-                <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Најава", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
 
+                @if (Request.IsAuthenticated)
+                {
+                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+
+                        <li id="zdravoCode" class="navlist" style="color:black; text-decoration:none">
+                            @Html.ActionLink("Здраво " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { id = "zdravoCode", title = "loginLink" })
+                        </li>
+                        <li class="navlist" style="color:black; text-decoration:none">
+                            <a id="addHover" style="color:black; text-decoration:none" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+
+                        </li>
+
+                    }
+                }
+                else
+                {
+
+                    <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Регистрација", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+
+
+                    <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Најава", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+
+
+
+                }
 
             </ul>
 
 
         </nav>
-
-
-
-        <ul style="margin-top:70px; padding:0px 10px 10px 10px; height:100%" id="locationsId">
-            @foreach (var i in Model)
+        @{
+            int g = 0;
+            foreach (var i in Model)
             {
-            <li style="clear:left;">
-                <a style="color:white; font-family:Arial; text-decoration:none; font-weight:bold;"  href="@Url.Action("Index","UserReviews",new { title=i.Name})">
-                    <p style="font-size:24px; font-family:Arial; ">@i.Name</p>
-                    <div  class="container">
-                        <div  class="review">
-
-                            <img src="@i.ImgUrl" />
-
-                            <span >
-                                @i.Description
-                            </span>
-
-                        </div>
-
-
-                    </div>
-                </a>    
-
-            </li>
-
+                g++;
             }
-        </ul>
+
+        }
+
+        @if (g == 0)
+        {
+            <h3 id="alert">
+                Моментално не постојат внесени локации зa овој град
+            </h3>
+        }
+        else
+        {
+            <ul style="margin-top:70px; padding:0px 10px 10px 10px; height:100%" id="locationsId">
+                @foreach (var i in Model)
+                {
+                    <li style="clear:left;">
+                        <a style="color:white; font-family:Arial; text-decoration:none; font-weight:bold;" href="@Url.Action("Index", "UserReviews", new { title = i.Name })">
+                            <p style="font-size:24px; font-family:Arial; ">@i.Name</p>
+                            <div class="container">
+                                <div class="review">
+
+                                    <img src="@i.ImgUrl" />
+
+                                    <span>
+                                        @i.Description
+                                    </span>
+
+                                </div>
+
+
+                            </div>
+                        </a>
+
+                    </li>
+
+
+
+                }
+
+            </ul>
+        }
+
     </div>
 
 </body>

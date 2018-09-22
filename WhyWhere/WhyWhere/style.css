@@ -76,6 +76,10 @@ text-decoration:none;
     height: 50px;
     margin: 30vh auto;
 }
+#alert {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
 
 
 @keyframes imageAnimation {
@@ -207,8 +211,13 @@ background-color:darkslategray;
     text-align:left;
 
 }
+
+
 #reviewsList{
-   float:right;
+   margin:auto;
+   position:relative;
+   top:90px;
+   text-align:justify;
     width: 50%;
     border: 4px solid gray;
     border-radius:5px;
@@ -224,6 +233,13 @@ background-color:darkslategray;
 
 }
 
+.logoff {
+color:black;
+text-decoration:none;
+}
+    .logoff:visited {
+    color:black;
+    }
 .review > img {
 height: inherit;
 width: 250px;
@@ -258,17 +274,22 @@ li > a :hover {
 }
 .navbar > ul > li:nth-child(n+2):hover {
     background-color:lightgrey;
-    transition: ease-in 0.3s;
+ 
     cursor:pointer;
 }
 
-.navbar > ul li {
-    display: inline-block;
+
+#addHover {
     padding: 20px 10px;
-    width: 150px;
-    float: left;
-    margin-top: -34px;
-   
+    
+}
+    #addHover:hover {
+        background-color: lightgray;
+    }
+#zdravoCode {
+color:black;
+text-decoration:none;
+cursor:initial;
 }
     .navbar > ul li:first-child:hover {
     cursor:pointer;
