@@ -19,26 +19,33 @@
 </head>
 <body>
     <div id="wrap">
+
         <nav class="navbar">
             <ul>
                 <li>
                     <img id="logo" src="https://image.ibb.co/i04Tjp/logofinal.png" />
                 </li>
-                <li class="navlist">
-                    Почетна
-                </li>
+                <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Почетна", "Index", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                
                 <li class="navlist">
                     Медиуми
                 </li>
-                
-                <li class="navlist"  >@Html.ActionLink("Најава", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+
+                <li class="navlist">@Html.ActionLink("Најава", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
 
             </ul>
 
 
         </nav>
+        @Html.BeginForm("AddReview", "UserReviews", FormMethod.Post){ 
+      
+        @Html.TextArea("Review", null, new { style = "resize:none; float:left", rows = "10", cols = "50" })
+         
+        <input style="float:left" type="submit" value="Коментар" />
+        }
 
         <ul id="reviewsList" style="list-style-type:none">
+
             @foreach (var i in Model)
             {
                 <li>@i.reviewDescription</li>
@@ -46,7 +53,11 @@
 
             }
         </ul>
+
+
+
     </div>
+    
 
 </body>
 </html>

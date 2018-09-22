@@ -178,8 +178,8 @@ font-weight: bold;
 text-decoration: none;
 }
 body {
-background-color:darkgray;
-}.
+background-color:darkslategray;
+}
 
 .wrap {
     text-align: center;
@@ -190,8 +190,8 @@ background-color:darkgray;
     float:left;
     min-height: 20vh;
     width: inherit;
-    background-color:white;
-    border:1px solid lightgrey;
+    
+    margin-bottom:30px;
     position:initial;
     left:0;
 }
@@ -208,12 +208,12 @@ background-color:darkgray;
 
 }
 #reviewsList{
-    margin: auto;
+   float:right;
     width: 50%;
     border: 4px solid gray;
     border-radius:5px;
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    margin-top:60px;
+    
     padding:15px 15px 15px 15px;
 }
 #reviewsList > li {
@@ -226,10 +226,11 @@ background-color:darkgray;
 
 .review > img {
 height: inherit;
-width: 30%;
+width: 250px;
 float:left;
 display:inline-block;
 margin-bottom: 0px;
+margin-right:35px;
 }
 
 #logo {
@@ -244,14 +245,17 @@ min-height: 10vh;
 max-height: 80vh;
 font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 display:block;
-margin:5%;
-background-color:white;
-color:black;
-font-weight:normal;
-width:80%;
+margin:0%;
+font-weight:bold;
+color:white;
+width:100%;
 min-width:650px;
+text-align:justify;
 }
 
+li > a :hover {
+    color: #22b573;
+}
 .navbar > ul > li:nth-child(n+2):hover {
     background-color:lightgrey;
     transition: ease-in 0.3s;

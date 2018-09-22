@@ -39,6 +39,11 @@ namespace WhyWhere.Controllers
             return View(userReview);
         }
 
+        public ActionResult AddReview(UserReview model) {
+            db.UserReviews.Add(model);
+            return RedirectToAction("Index", model.Name);
+        }
+
         // GET: UserReviews/Create
         public ActionResult Create()
         {

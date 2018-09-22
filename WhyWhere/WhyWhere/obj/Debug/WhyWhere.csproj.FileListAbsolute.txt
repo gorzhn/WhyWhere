@@ -514,3 +514,7 @@ C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.cspro
 C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.dll
 C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.pdb
 C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.asdf.resources
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.testMigration.resources
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.newest.resources
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.newest1.resources
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.asdf.resources
