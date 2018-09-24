@@ -41,9 +41,10 @@
                         @Html.AntiForgeryToken()
 
 
-                        <li id="zdravoCode" class="navlist" style="color:black; text-decoration:none">
-                            @Html.ActionLink("Здраво " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { id = "zdravoCode", title = "loginLink" })
+                        <li id="zdravoCode" class="navlist" style="float:right; color:black; text-decoration:none">
+                            @Html.ActionLink("Здраво " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { style = " margin-right:64px; font-size:13px", id = "zdravoCode", title = "loginLink" })
                         </li>
+
                         <li class="navlist" style="color:black; text-decoration:none">
                             <a id="addHover" style="color:black; text-decoration:none" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
 
@@ -73,7 +74,8 @@
 
             @foreach (var i in Model)
             {
-                <li>@i.reviewDescription</li>
+
+                <li>@i.User : @i.reviewDescription</li>
 
 
             }

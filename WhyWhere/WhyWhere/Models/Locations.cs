@@ -24,8 +24,11 @@ namespace WhyWhere.Models
         // for the rating
         public int? UserId { get; set; }
         public int? UserRating { get; set; }
-        
-        
 
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

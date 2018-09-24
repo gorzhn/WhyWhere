@@ -26,18 +26,28 @@ namespace WhyWhere.Controllers
             return View(models2);
         }
 
+        [Authorize]
+        public ActionResult AddReview()
+        {
+            UserReview model = new UserReview();
+            model.User = User.Identity.Name;
+            model.lokacii = db.Locations.ToList();
 
-        public ActionResult AddReview() {
-        
 
-            return View();
+            return View(model);
 
         }
         [HttpPost]
-        public ActionResult AddReview(UserReview model) {
+        public ActionResult AddReview(UserReview model)
+        {
+
+
+
             db.UserReviews.Add(model);
             db.SaveChanges();
-            return RedirectToAction("Index",new { title = model.Name });
+
+
+            return RedirectToAction("Index", new { title = model.Name });
 
         }
 

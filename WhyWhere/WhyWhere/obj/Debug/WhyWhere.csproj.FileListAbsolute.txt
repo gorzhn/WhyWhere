@@ -1,4 +1,3 @@
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csprojAssemblyReference.cache
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csproj.CoreCompileInputs.cache
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\bin\ApplicationInsights.config
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\bin\WhyWhere.dll.config
@@ -120,11 +119,6 @@ C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\bin\Microsoft.CodeDom.Provide
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csproj.CopyComplete
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.dll
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.pdb
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csproj.GenerateResource.cache
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.rehaul.resources
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.locations1.resources
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.recovery.resources
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.nullable.resources
 C:\Users\Goce\Desktop\WhyWhere\safe copy\WhyWhere\WhyWhere\bin\ApplicationInsights.config
 C:\Users\Goce\Desktop\WhyWhere\safe copy\WhyWhere\WhyWhere\bin\WhyWhere.dll.config
 C:\Users\Goce\Desktop\WhyWhere\safe copy\WhyWhere\WhyWhere\bin\WhyWhere.dll
@@ -514,10 +508,6 @@ C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.cspro
 C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.dll
 C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.pdb
 C:\Users\Goce\Desktop\WhyWhere\Fromgi\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.asdf.resources
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.testMigration.resources
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.newest.resources
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.newest1.resources
-C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.asdf.resources
 C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\bin\ApplicationInsights.config
 C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\bin\WhyWhere.dll.config
 C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\bin\WhyWhere.dll
@@ -650,3 +640,6 @@ C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.cspr
 C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.dll
 C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.pdb
 C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.userreviews.resources
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csprojAssemblyReference.cache
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.eyy.resources
+C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csproj.GenerateResource.cache

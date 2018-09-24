@@ -8,8 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body style="background-color:darkslategray">
-    <div class="navbar navbar-inverse navbar-fixed-top">
+<body style="background-color:white">
+    <div style="background-color:white" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,21 +19,22 @@
                 </button>
                 @Html.ActionLink("WHYWHERE", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            <!--<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                    @Html.Partial("_LoginPartial")
             </div>
+            -->
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - WHYWHERE</p>
+            <p>&copy; @DateTime.Now.Year - <img style=" height:30px; width:140px" src="https://image.ibb.co/i04Tjp/logofinal.png" /></p>
         </footer>
     </div>
 

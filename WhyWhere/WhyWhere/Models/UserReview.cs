@@ -14,7 +14,15 @@ namespace WhyWhere.Models
         public string reviewDescription { get; set; }
         [Display(Name = "Локација")]
         public string Name { get; set; }
+       
+        public string User { get; set; }
 
+        
+        public List<Locations> lokacii { get; set; }
+
+        public UserReview() {
+            lokacii = new List<Locations>();
+        }
 
 
 

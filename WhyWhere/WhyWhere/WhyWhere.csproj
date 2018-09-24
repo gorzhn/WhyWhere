@@ -206,41 +206,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807021013568_rehaul.cs" />
-    <Compile Include="Migrations\201807021013568_rehaul.Designer.cs">
-      <DependentUpon>201807021013568_rehaul.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807051301259_locations1.cs" />
-    <Compile Include="Migrations\201807051301259_locations1.Designer.cs">
-      <DependentUpon>201807051301259_locations1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807051320550_recovery.cs" />
-    <Compile Include="Migrations\201807051320550_recovery.Designer.cs">
-      <DependentUpon>201807051320550_recovery.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807051323236_nullable.cs" />
-    <Compile Include="Migrations\201807051323236_nullable.Designer.cs">
-      <DependentUpon>201807051323236_nullable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809091431316_testMigration.cs" />
-    <Compile Include="Migrations\201809091431316_testMigration.Designer.cs">
-      <DependentUpon>201809091431316_testMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809201323097_newest.cs" />
-    <Compile Include="Migrations\201809201323097_newest.Designer.cs">
-      <DependentUpon>201809201323097_newest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809201324253_newest1.cs" />
-    <Compile Include="Migrations\201809201324253_newest1.Designer.cs">
-      <DependentUpon>201809201324253_newest1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809201518276_asdf.cs" />
-    <Compile Include="Migrations\201809201518276_asdf.Designer.cs">
-      <DependentUpon>201809201518276_asdf.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809221230345_user reviews.cs" />
-    <Compile Include="Migrations\201809221230345_user reviews.Designer.cs">
-      <DependentUpon>201809221230345_user reviews.cs</DependentUpon>
+    <Compile Include="Migrations\201809240049283_eyy.cs" />
+    <Compile Include="Migrations\201809240049283_eyy.Designer.cs">
+      <DependentUpon>201809240049283_eyy.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -371,39 +339,15 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807021013568_rehaul.resx">
-      <DependentUpon>201807021013568_rehaul.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807051301259_locations1.resx">
-      <DependentUpon>201807051301259_locations1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807051320550_recovery.resx">
-      <DependentUpon>201807051320550_recovery.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807051323236_nullable.resx">
-      <DependentUpon>201807051323236_nullable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809091431316_testMigration.resx">
-      <DependentUpon>201809091431316_testMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809201323097_newest.resx">
-      <DependentUpon>201809201323097_newest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809201324253_newest1.resx">
-      <DependentUpon>201809201324253_newest1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809201518276_asdf.resx">
-      <DependentUpon>201809201518276_asdf.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809221230345_user reviews.resx">
-      <DependentUpon>201809221230345_user reviews.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809240049283_eyy.resx">
+      <DependentUpon>201809240049283_eyy.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
