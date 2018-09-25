@@ -26,22 +26,23 @@
         <li>
             <span>Image 01</span>
             <div>
-                <h3>истражувај </h3>
+               
             </div>
         </li>
 
         <li>
-            <span>Image 02</span>
+          <span>Image 02</span>
+        
             <div>
-                <h3>живеј </h3>
+
             </div>
         </li>
 
 
         <li>
-            <span>Image 03</span>
+               <span>Image 03</span>
             <div>
-                <h3>освојувај</h3>
+
             </div>
         </li>
 
@@ -50,7 +51,7 @@
     <div style="width:100%; text-align:center">
         @using (Html.BeginForm("Selection", "Home", FormMethod.Post))
         {
-            @Html.Label("Одберете држава", new { style = "position:relative; font-weight:bold; font-family:Arial" })
+            @Html.Label("Одберете држава", new { style = "font-size:20px; position:relative; font-weight:bolder; font-family:Arial" })
             @Html.DropDownListFor(Model => Model.selectedCountry, new SelectList(Model.countries), new { @onchange = "ShowButton()", @class = "selectbox form-control" })
 
             <input style="display:none" type="submit" id="confirmBtn" value="Потврдете">
