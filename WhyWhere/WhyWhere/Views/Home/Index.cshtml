@@ -50,7 +50,7 @@
     <div style="width:100%; text-align:center">
         @using (Html.BeginForm("Selection", "Home", FormMethod.Post))
         {
-
+            @Html.Label("Одберете држава", new { style = "position:relative; font-weight:bold; font-family:Arial" })
             @Html.DropDownListFor(Model => Model.selectedCountry, new SelectList(Model.countries), new { @onchange = "ShowButton()", @class = "selectbox form-control" })
 
             <input style="display:none" type="submit" id="confirmBtn" value="Потврдете">
