@@ -69,6 +69,11 @@
 
         </nav>
 
+        @if (User.Identity.IsAuthenticated)
+        {
+
+            <a style="background-color:#78d2aa; font-family: Arial; font-weight: bolder; text-align: center; justify-content: center; margin-top:50px;height: 30px;line-height: 2;text-decoration:none; display:flex; align-self:baseline;" class="btn btn-info" href="@Url.Action("AddReview", "UserReviews")">Ваш коментар</a>
+        }
 
         <ul id="reviewsList" style="list-style-type:none">
 
@@ -81,11 +86,7 @@
             }
         </ul>
 
-        @if (User.Identity.IsAuthenticated)
-        {
 
-            <a href="@Url.Action("AddReview", "UserReviews")">Ваш коментар</a>
-        }
 
     </div>
 

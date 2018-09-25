@@ -75,12 +75,12 @@
         }
         else
         {
-            <ul style="margin-top:70px; padding:0px 10px 10px 10px; height:100%" id="locationsId">
+            <ul style="margin-top:70px; padding:0px 10px 10px 10px; height:76%" id="locationsId">
                 @foreach (var i in Model)
                 {
                     <li style="clear:left;">
                         <a style="color:white; font-family:Arial; text-decoration:none; font-weight:bold;" href="@Url.Action("Index", "UserReviews", new { title = i.Name })">
-                            <p style="font-size:24px; font-family:Arial; ">@i.Name</p>
+                            <p id="title" style="font-size:24px; font-family:Arial; ">@i.Name</p>
                             <div class="container">
                                 <div class="review">
 
