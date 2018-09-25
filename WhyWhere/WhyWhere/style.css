@@ -137,7 +137,7 @@ text-decoration:none;
     top: 0px;
     left: 0px;
     text-align: center;
-    overflow:scroll;
+    
 }
 
 .grid {
@@ -209,7 +209,11 @@ background-color:darkslategray;
     width:70%;
     min-width:800px;
     text-align:left;
-
+    overflow-y:scroll;
+    margin-top:70px;
+    padding:0px 10px 10px 10px;
+    height:76%;
+    background-color:white;
 }
 
 
@@ -263,7 +267,7 @@ font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 display:block;
 margin:0%;
 font-weight:bold;
-color:white;
+color:black;
 width:100%;
 min-width:650px;
 text-align:justify;
@@ -278,6 +282,12 @@ li > a :hover {
     cursor:pointer;
 }
 
+#title {
+color:black;
+}
+#title:hover {
+    color: #22b573;
+}
 
 #addHover {
     padding: 20px 10px;
