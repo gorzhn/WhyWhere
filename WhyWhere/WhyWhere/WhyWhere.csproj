@@ -210,8 +210,17 @@
     <Compile Include="Migrations\201809240049283_eyy.Designer.cs">
       <DependentUpon>201809240049283_eyy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809252340536_just end me already.cs" />
+    <Compile Include="Migrations\201809252340536_just end me already.Designer.cs">
+      <DependentUpon>201809252340536_just end me already.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809252356187_end me.cs" />
+    <Compile Include="Migrations\201809252356187_end me.Designer.cs">
+      <DependentUpon>201809252356187_end me.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AddUserToRole.cs" />
     <Compile Include="Models\Cities.cs" />
     <Compile Include="Models\CountryModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -329,6 +338,8 @@
     <Content Include="Views\Shared\LocationsPartial.cshtml" />
     <Content Include="Views\UserReviews\Index.cshtml" />
     <Content Include="Views\UserReviews\AddReview.cshtml" />
+    <Content Include="Views\Account\AddUserToRole.cshtml" />
+    <Content Include="Views\Cities\NewCity.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -347,6 +358,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201809240049283_eyy.resx">
       <DependentUpon>201809240049283_eyy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809252340536_just end me already.resx">
+      <DependentUpon>201809252340536_just end me already.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809252356187_end me.resx">
+      <DependentUpon>201809252356187_end me.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

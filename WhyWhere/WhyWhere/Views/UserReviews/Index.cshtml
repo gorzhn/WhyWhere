@@ -49,6 +49,11 @@
                             <a id="addHover" style="color:black; text-decoration:none" href="javascript:document.getElementById('logoutForm').submit()">Одјава</a>
 
                         </li>
+                        if (User.IsInRole("Admin"))
+                        {
+                            <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Менаџмент", "AddUserToRole", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                        }
+
 
                     }
                 }

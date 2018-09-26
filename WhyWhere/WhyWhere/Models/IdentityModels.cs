@@ -40,6 +40,6 @@ namespace WhyWhere.Models
 
         public System.Data.Entity.DbSet<WhyWhere.Models.UserReview> UserReviews { get; set; }
 
-     
+        public System.Data.Entity.DbSet<WhyWhere.Models.AddUserToRole> AddUserToRoles { get; set; }
     }
 }

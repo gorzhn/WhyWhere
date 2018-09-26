@@ -44,7 +44,15 @@ namespace WhyWhere.Controllers
             }
             return View(cities);
         }
-
+        public ActionResult NewCity() {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult NewCity(Cities city) {
+            db.Cities.Add(city);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
         // GET: Cities/Create
         public ActionResult Create()
         {

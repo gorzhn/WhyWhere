@@ -635,3 +635,5 @@ C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csprojAsse
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.eyy.resources
 C:\Users\Gorjan\Desktop\WhyWhere\WhyWhere\WhyWhere\obj\Debug\WhyWhere.csproj.GenerateResource.cache
 C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.eyy.resources
+C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.justendmealready.resources
+C:\Users\Goce\Desktop\WhyWhere\FromGit\WhyWhere\WhyWhere\obj\Debug\WhyWhere.Migrations.endme.resources

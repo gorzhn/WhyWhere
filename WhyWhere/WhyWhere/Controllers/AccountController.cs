@@ -14,9 +14,11 @@ namespace WhyWhere.Controllers
 {
     [Authorize]
     public class AccountController : Controller
+
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        ApplicationDbContext context = new ApplicationDbContext();
 
         public AccountController()
         {
@@ -153,17 +155,19 @@ namespace WhyWhere.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+              
+
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
+                   
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
@@ -172,6 +176,9 @@ namespace WhyWhere.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+
+     
+
 
         //
         // GET: /Account/ConfirmEmail
@@ -221,7 +228,27 @@ namespace WhyWhere.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+        public ActionResult AddUserToRole() {
+            var model = new AddUserToRole();
+            model.roles.Add("Admin");
+            model.roles.Add("User");
+            model.roles.Add("Editor");
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult AddUserToRole(AddUserToRole model) {
+            //UserManager user  = UserManager.Users.Where(m => m.Email == model.Email);
+            var user = context.Users.Single(m => m.Email == model.Email);
 
+            
+            
+
+            
+            UserManager.AddToRole(user.Id, model.selectedRole);
+            context.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
+        }
         //
         // GET: /Account/ForgotPasswordConfirmation
         [AllowAnonymous]
