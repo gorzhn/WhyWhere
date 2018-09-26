@@ -36,7 +36,18 @@ namespace WhyWhere.Controllers
             }
             return View(locations);
         }
+        [Authorize(Roles = "Admin")]
+        public ActionResult NewLocation() {
+            return View();
 
+        }
+        [HttpPost]
+
+        public ActionResult NewLocation(Locations location) {
+            db.Locations.Add(location);
+            db.SaveChanges();
+            return RedirectToAction("Index", "Locations",new { title = location.City});
+        }
         // GET: Locations/Create
         public ActionResult Create()
         {

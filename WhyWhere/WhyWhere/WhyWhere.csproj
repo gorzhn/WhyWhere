@@ -340,6 +340,7 @@
     <Content Include="Views\UserReviews\AddReview.cshtml" />
     <Content Include="Views\Account\AddUserToRole.cshtml" />
     <Content Include="Views\Cities\NewCity.cshtml" />
+    <Content Include="Views\Locations\NewLocation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

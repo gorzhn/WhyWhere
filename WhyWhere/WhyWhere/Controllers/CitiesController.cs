@@ -44,6 +44,7 @@ namespace WhyWhere.Controllers
             }
             return View(cities);
         }
+        [Authorize(Roles = "Admin")]
         public ActionResult NewCity() {
             return View();
         }

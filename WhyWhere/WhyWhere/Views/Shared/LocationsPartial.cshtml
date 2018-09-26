@@ -44,6 +44,8 @@
                     if (User.IsInRole("Admin"))
                     {
                         <li class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Менаџмент", "AddUserToRole", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                        <li id="addHover" class="navlist" style="color:black; text-decoration:none;">@Html.ActionLink("Нова Локација", "NewLocation", "Locations", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+
                     }
                 }
                 else

@@ -12,12 +12,15 @@ namespace WhyWhere.Models
         public int Id { get; set; }
         //info
         [Required]
+        [Display(Name="Град")]
         public string City { get; set; }
         [Required]
+        [Display(Name = "Url")]
         public string ImgUrl { get; set; }
         [Required]
+        [Display(Name = "Име")]
         public string Name { get; set; }
-        
+        [Display(Name = "Опис")]
         public string Description { get; set; }
 
 

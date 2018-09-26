@@ -228,6 +228,7 @@ namespace WhyWhere.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+        [Authorize(Roles = "Admin")]
         public ActionResult AddUserToRole() {
             var model = new AddUserToRole();
             model.roles.Add("Admin");
@@ -235,6 +236,7 @@ namespace WhyWhere.Controllers
             model.roles.Add("Editor");
             return View(model);
         }
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public ActionResult AddUserToRole(AddUserToRole model) {
             //UserManager user  = UserManager.Users.Where(m => m.Email == model.Email);
